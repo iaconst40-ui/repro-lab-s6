@@ -29,8 +29,7 @@ def main(seed=42, data_path="data/reservoir_data.csv"):
     set_reproducibility_seeds(seed)
     
     # Load dataset
-    #df = pd.read_csv(data_path)
-    df = df
+    df = pd.read_csv(data_path)
     
     # Target engineering variables configuration from your structural analysis setup
     features = ["D", "hn", "HL", "ssuelo", "tp", "tl"]
